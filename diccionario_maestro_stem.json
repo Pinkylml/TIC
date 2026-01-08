@@ -1,0 +1,424 @@
+{
+  "_metadata": {
+    "version": "1.0",
+    "created": "2026-01-08",
+    "sources": ["O*NET", "ESCO", "IEEE-SWEBOK", "EPN Curriculum"],
+    "total_competencias": 52,
+    "descripcion": "Diccionario maestro de competencias técnicas STEM para graduados de la EPN Ecuador"
+  },
+  
+  "competencias": {
+    
+    "programacion": {
+      "canonical": "programming",
+      "aliases": ["programación", "programacion", "coding", "desarrollo de código", "software development", "codificación", "programación avanzada", "programación orientada a objetos", "poo", "oop"],
+      "categoria": "computing",
+      "o_net": "2.C.4.a"
+    },
+    
+    "python": {
+      "canonical": "python",
+      "aliases": ["python", "python3", "programación python", "scripting python"],
+      "categoria": "computing",
+      "o_net": "2.C.4.a-python"
+    },
+    
+    "java": {
+      "canonical": "java",
+      "aliases": ["java", "java se", "java ee", "programación java", "j2ee"],
+      "categoria": "computing",
+      "o_net": "2.C.4.a-java"
+    },
+    
+    "desarrollo_web": {
+      "canonical": "web_development",
+      "aliases": ["desarrollo web", "aplicaciones web", "web", "frontend", "backend", "full stack", "html", "css", "javascript", "react", "angular", "vue", "node", "nodejs", "django", "flask"],
+      "categoria": "computing",
+      "o_net": "2.C.4.a-web"
+    },
+    
+    "desarrollo_movil": {
+      "canonical": "mobile_development",
+      "aliases": ["aplicaciones móviles", "aplicaciones moviles", "desarrollo móvil", "android", "ios", "flutter", "react native", "kotlin", "swift"],
+      "categoria": "computing",
+      "o_net": "2.C.4.a-mobile"
+    },
+    
+    "base_datos": {
+      "canonical": "databases",
+      "aliases": ["bases de datos", "base de datos", "sql", "mysql", "postgresql", "oracle", "nosql", "mongodb", "almacenamiento de datos", "data storage", "db"],
+      "categoria": "data",
+      "o_net": "2.C.4.e"
+    },
+    
+    "machine_learning": {
+      "canonical": "machine_learning",
+      "aliases": ["machine learning", "ml", "aprendizaje automático", "aprendizaje automatico", "deep learning", "redes neuronales", "neural networks", "tensorflow", "pytorch", "keras", "scikit-learn"],
+      "categoria": "data_science",
+      "o_net": "2.C.4.e-ml"
+    },
+    
+    "inteligencia_artificial": {
+      "canonical": "artificial_intelligence",
+      "aliases": ["inteligencia artificial", "ia", "ai", "artificial intelligence", "nlp", "computer vision", "visión artificial"],
+      "categoria": "data_science",
+      "o_net": "2.C.4.e-ai"
+    },
+    
+    "analisis_datos": {
+      "canonical": "data_analysis",
+      "aliases": ["análisis de datos", "analisis de datos", "data analysis", "minería de datos", "data mining", "procesamiento de datos", "estadística", "estadistica", "spss", "r", "pandas", "numpy"],
+      "categoria": "data_science",
+      "o_net": "2.C.4.e-analytics"
+    },
+    
+    "big_data": {
+      "canonical": "big_data",
+      "aliases": ["big data", "hadoop", "spark", "procesamiento distribuido", "data lake", "data warehouse", "etl"],
+      "categoria": "data_science",
+      "o_net": "2.C.4.e-bigdata"
+    },
+    
+    "redes": {
+      "canonical": "networking",
+      "aliases": ["redes", "redes de computadoras", "networking", "lan", "wan", "tcp/ip", "tcp ip", "cableado estructurado", "switching", "routing", "cisco", "mikrotik"],
+      "categoria": "networking",
+      "o_net": "2.C.4.b"
+    },
+    
+    "telecomunicaciones": {
+      "canonical": "telecommunications",
+      "aliases": ["telecomunicaciones", "telecom", "comunicaciones", "sistemas de comunicación", "redes ópticas", "fibra óptica", "microondas", "transmisión digital", "modulación"],
+      "categoria": "networking",
+      "o_net": "2.C.4.b-telecom"
+    },
+    
+    "redes_inalambricas": {
+      "canonical": "wireless_networks",
+      "aliases": ["redes inalámbricas", "wireless", "wifi", "sistemas inalámbricos", "comunicación inalámbrica", "antenas", "propagación"],
+      "categoria": "networking",
+      "o_net": "2.C.4.b-wireless"
+    },
+    
+    "sistemas_celulares": {
+      "canonical": "cellular_systems",
+      "aliases": ["sistemas celulares", "telefonía móvil", "5g", "4g", "lte", "gsm", "comunicaciones móviles"],
+      "categoria": "networking",
+      "o_net": "2.C.4.b-cellular"
+    },
+    
+    "ciberseguridad": {
+      "canonical": "cybersecurity",
+      "aliases": ["ciberseguridad", "seguridad informática", "seguridad", "hacking ético", "ethical hacking", "pentesting", "tecnologías de la seguridad", "fundamentos de seguridad", "software seguro"],
+      "categoria": "security",
+      "o_net": "2.C.4.c"
+    },
+    
+    "cloud_computing": {
+      "canonical": "cloud_computing",
+      "aliases": ["cloud", "cloud computing", "aws", "azure", "google cloud", "gcp", "nube", "computación en la nube", "servicios cloud"],
+      "categoria": "infrastructure",
+      "o_net": "2.C.4.d"
+    },
+    
+    "sistemas_operativos": {
+      "canonical": "operating_systems",
+      "aliases": ["sistemas operativos", "linux", "windows server", "unix", "administración de sistemas", "so"],
+      "categoria": "infrastructure",
+      "o_net": "2.C.4.d-os"
+    },
+    
+    "iot": {
+      "canonical": "iot",
+      "aliases": ["iot", "internet of things", "internet de las cosas", "sistemas embebidos", "embedded systems", "arduino", "raspberry pi", "microprocesadores", "sistemas microprocesados"],
+      "categoria": "electronics",
+      "o_net": "2.C.4.f"
+    },
+    
+    "automatizacion": {
+      "canonical": "automation",
+      "aliases": ["automatización", "automatizacion", "plc", "scada", "control industrial", "automatización industrial", "automatas programables", "ladder", "controladores lógicos", "hmi"],
+      "categoria": "automation",
+      "o_net": "2.C.5.a"
+    },
+    
+    "robotica": {
+      "canonical": "robotics",
+      "aliases": ["robótica", "robotica", "robots", "robótica industrial", "sistemas robóticos"],
+      "categoria": "automation",
+      "o_net": "2.C.5.b"
+    },
+    
+    "electronica": {
+      "canonical": "electronics",
+      "aliases": ["electrónica", "electronica", "circuitos", "circuitos eléctricos", "electrónica de potencia", "electrónica digital", "electrónica analógica"],
+      "categoria": "electronics",
+      "o_net": "2.C.5.c"
+    },
+    
+    "instrumentacion": {
+      "canonical": "instrumentation",
+      "aliases": ["instrumentación", "instrumentacion", "instrumentación industrial", "sensores", "medición", "metrología", "calibración"],
+      "categoria": "electronics",
+      "o_net": "2.C.5.d"
+    },
+    
+    "control": {
+      "canonical": "control_systems",
+      "aliases": ["control", "sistemas de control", "control automático", "control electromecánico", "teoría de control", "pid", "control digital"],
+      "categoria": "automation",
+      "o_net": "2.C.5.e"
+    },
+    
+    "electricidad": {
+      "canonical": "electrical_engineering",
+      "aliases": ["electricidad", "sistemas eléctricos", "instalaciones eléctricas", "máquinas eléctricas", "motores eléctricos", "transformadores", "protecciones eléctricas", "protecciones"],
+      "categoria": "electrical",
+      "o_net": "2.C.6.a"
+    },
+    
+    "sistemas_potencia": {
+      "canonical": "power_systems",
+      "aliases": ["sistemas de potencia", "sep", "sistemas eléctricos de potencia", "alta tensión", "medio voltaje", "bajo voltaje", "distribución eléctrica", "sistemas eléctricos de distribución"],
+      "categoria": "electrical",
+      "o_net": "2.C.6.b"
+    },
+    
+    "energias_renovables": {
+      "canonical": "renewable_energy",
+      "aliases": ["energías renovables", "energias renovables", "solar", "eólica", "energía solar", "energía eólica", "generación distribuida", "fotovoltaico"],
+      "categoria": "electrical",
+      "o_net": "2.C.6.c"
+    },
+    
+    "calidad_energia": {
+      "canonical": "power_quality",
+      "aliases": ["calidad de energía", "calidad energética", "armónicos", "factor de potencia", "eficiencia energética"],
+      "categoria": "electrical",
+      "o_net": "2.C.6.d"
+    },
+    
+    "termodinamica": {
+      "canonical": "thermodynamics",
+      "aliases": ["termodinámica", "termodinamica", "transferencia de calor", "refrigeración", "aire acondicionado", "hvac", "sistemas térmicos", "ciclos termodinámicos"],
+      "categoria": "mechanical",
+      "o_net": "2.C.7.a"
+    },
+    
+    "mecanica_fluidos": {
+      "canonical": "fluid_mechanics",
+      "aliases": ["mecánica de fluidos", "mecanica de fluidos", "hidráulica", "hidraulica", "neumática", "fluidos", "bombas", "turbinas"],
+      "categoria": "mechanical",
+      "o_net": "2.C.7.b"
+    },
+    
+    "diseno_mecanico": {
+      "canonical": "mechanical_design",
+      "aliases": ["diseño mecánico", "diseño de máquinas", "elementos de máquinas", "cad", "autocad", "solidworks", "inventor", "catia", "diseño cad", "cad/cam"],
+      "categoria": "mechanical",
+      "o_net": "2.C.7.c"
+    },
+    
+    "resistencia_materiales": {
+      "canonical": "strength_of_materials",
+      "aliases": ["resistencia de materiales", "mecánica de materiales", "materiales", "ciencia de materiales", "fatiga", "desgaste"],
+      "categoria": "mechanical",
+      "o_net": "2.C.7.d"
+    },
+    
+    "manufactura": {
+      "canonical": "manufacturing",
+      "aliases": ["manufactura", "procesos de manufactura", "procesos industriales", "producción", "lean manufacturing", "six sigma", "gestión de la producción"],
+      "categoria": "industrial",
+      "o_net": "2.C.8.a"
+    },
+    
+    "gestion_calidad": {
+      "canonical": "quality_management",
+      "aliases": ["gestión de calidad", "calidad", "control de calidad", "aseguramiento de calidad", "iso 9001", "mejora continua", "gestión de procesos"],
+      "categoria": "industrial",
+      "o_net": "2.C.8.b"
+    },
+    
+    "gestion_proyectos": {
+      "canonical": "project_management",
+      "aliases": ["gestión de proyectos", "project management", "pmp", "scrum", "agile", "metodologías ágiles", "kanban", "planificación"],
+      "categoria": "management",
+      "o_net": "2.C.9.a"
+    },
+    
+    "ingenieria_software": {
+      "canonical": "software_engineering",
+      "aliases": ["ingeniería de software", "ingenieria de software", "desarrollo de software", "arquitectura de software", "patrones de diseño", "uml", "testing", "qa", "devops"],
+      "categoria": "computing",
+      "o_net": "2.C.4.a-se"
+    },
+    
+    "estructuras": {
+      "canonical": "structural_engineering",
+      "aliases": ["estructuras", "diseño estructural", "análisis estructural", "estructuras de acero", "estructuras de hormigón", "sísmica", "cálculo estructural", "puentes"],
+      "categoria": "civil",
+      "o_net": "2.C.10.a"
+    },
+    
+    "geotecnia": {
+      "canonical": "geotechnical_engineering",
+      "aliases": ["geotecnia", "suelos", "mecánica de suelos", "cimentaciones", "estabilidad de taludes"],
+      "categoria": "civil",
+      "o_net": "2.C.10.b"
+    },
+    
+    "hidraulica_sanitaria": {
+      "canonical": "hydraulic_engineering",
+      "aliases": ["hidráulica", "hidrología", "alcantarillado", "agua potable", "aguas residuales", "tratamiento de aguas", "potabilización", "saneamiento"],
+      "categoria": "civil",
+      "o_net": "2.C.10.c"
+    },
+    
+    "construccion": {
+      "canonical": "construction",
+      "aliases": ["construcción", "construccion", "obras civiles", "presupuestos", "programación de obra", "supervisión de obra"],
+      "categoria": "civil",
+      "o_net": "2.C.10.d"
+    },
+    
+    "quimica_industrial": {
+      "canonical": "industrial_chemistry",
+      "aliases": ["química industrial", "quimica industrial", "procesos químicos", "química analítica", "fisicoquímica", "análisis instrumental"],
+      "categoria": "chemistry",
+      "o_net": "2.C.11.a"
+    },
+    
+    "operaciones_unitarias": {
+      "canonical": "unit_operations",
+      "aliases": ["operaciones unitarias", "transferencia de masa", "separaciones", "destilación", "extracción", "reactores químicos"],
+      "categoria": "chemistry",
+      "o_net": "2.C.11.b"
+    },
+    
+    "ambiental": {
+      "canonical": "environmental_engineering",
+      "aliases": ["ambiental", "ingeniería ambiental", "impacto ambiental", "evaluación de impacto", "remediación", "gestión ambiental", "regulación ambiental", "residuos"],
+      "categoria": "environmental",
+      "o_net": "2.C.12.a"
+    },
+    
+    "geologia": {
+      "canonical": "geology",
+      "aliases": ["geología", "geologia", "yacimientos", "mineralogía", "petrografía", "geología estructural", "vulcanología", "metalogenia"],
+      "categoria": "earth_sciences",
+      "o_net": "2.C.13.a"
+    },
+    
+    "petroleos": {
+      "canonical": "petroleum_engineering",
+      "aliases": ["petróleos", "petroleos", "petróleo", "yacimientos petroleros", "perforación", "producción petrolera", "simulación de yacimientos", "geología del petróleo"],
+      "categoria": "earth_sciences",
+      "o_net": "2.C.13.b"
+    },
+    
+    "agroindustria": {
+      "canonical": "agroindustry",
+      "aliases": ["agroindustria", "tecnología de alimentos", "alimentos", "bioingeniería", "biotecnología", "procesos agroindustriales", "conservación de alimentos"],
+      "categoria": "agroindustry",
+      "o_net": "2.C.14.a"
+    },
+    
+    "matematica_aplicada": {
+      "canonical": "applied_mathematics",
+      "aliases": ["matemática", "matematica", "cálculo", "álgebra", "ecuaciones diferenciales", "métodos numéricos", "optimización", "modelamiento matemático"],
+      "categoria": "mathematics",
+      "o_net": "2.C.15.a"
+    },
+    
+    "fisica_aplicada": {
+      "canonical": "applied_physics",
+      "aliases": ["física", "fisica", "física aplicada", "óptica", "acústica", "radiación", "física de materiales"],
+      "categoria": "physics",
+      "o_net": "2.C.15.b"
+    },
+    
+    "economia_finanzas": {
+      "canonical": "economics_finance",
+      "aliases": ["economía", "economia", "finanzas", "análisis financiero", "ingeniería financiera", "economía financiera", "contabilidad", "costos"],
+      "categoria": "business",
+      "o_net": "2.C.16.a"
+    },
+    
+    "gestion_empresarial": {
+      "canonical": "business_management",
+      "aliases": ["gestión empresarial", "administración", "emprendimiento", "negocios", "business", "estrategia empresarial", "administración de empresas"],
+      "categoria": "business",
+      "o_net": "2.C.16.b"
+    },
+    
+    "auditoria_ti": {
+      "canonical": "it_audit",
+      "aliases": ["auditoría informática", "auditoria informatica", "auditoría", "auditoria", "cobit", "itil", "gobernanza ti", "compliance"],
+      "categoria": "governance",
+      "o_net": "2.C.17.a"
+    },
+    
+    "hci": {
+      "canonical": "human_computer_interaction",
+      "aliases": ["hci", "interacción humano computador", "ux", "ui", "experiencia de usuario", "diseño de interfaces", "usabilidad"],
+      "categoria": "computing",
+      "o_net": "2.C.4.g"
+    },
+    
+    "algoritmos": {
+      "canonical": "algorithms_data_structures",
+      "aliases": ["algoritmos", "estructuras de datos", "complejidad algorítmica", "ordenamiento", "búsqueda", "grafos", "árboles"],
+      "categoria": "computing",
+      "o_net": "2.C.4.h"
+    }
+  },
+  
+  "categorias": {
+    "computing": "Computación y Desarrollo de Software",
+    "data": "Datos y Almacenamiento",
+    "data_science": "Ciencia de Datos e IA",
+    "networking": "Redes y Telecomunicaciones",
+    "security": "Seguridad Informática",
+    "infrastructure": "Infraestructura y Cloud",
+    "electronics": "Electrónica",
+    "automation": "Automatización y Control",
+    "electrical": "Ingeniería Eléctrica",
+    "mechanical": "Ingeniería Mecánica",
+    "industrial": "Ingeniería Industrial",
+    "management": "Gestión y Proyectos",
+    "civil": "Ingeniería Civil",
+    "chemistry": "Ingeniería Química",
+    "environmental": "Ingeniería Ambiental",
+    "earth_sciences": "Ciencias de la Tierra",
+    "agroindustry": "Agroindustria",
+    "mathematics": "Matemáticas",
+    "physics": "Física",
+    "business": "Negocios y Finanzas",
+    "governance": "Gobernanza y Auditoría"
+  },
+  
+  "carreras_epn_mapping": {
+    "computacion": ["programacion", "python", "java", "desarrollo_web", "desarrollo_movil", "base_datos", "machine_learning", "inteligencia_artificial", "algoritmos", "ingenieria_software", "hci"],
+    "software": ["programacion", "python", "java", "desarrollo_web", "desarrollo_movil", "base_datos", "ingenieria_software", "gestion_proyectos", "algoritmos"],
+    "desarrollo_software": ["programacion", "python", "java", "desarrollo_web", "desarrollo_movil", "base_datos", "ingenieria_software", "gestion_proyectos"],
+    "tics": ["programacion", "desarrollo_web", "base_datos", "cloud_computing", "redes", "ciberseguridad", "auditoria_ti"],
+    "redes_telecomunicaciones": ["redes", "telecomunicaciones", "redes_inalambricas", "sistemas_celulares", "ciberseguridad", "cloud_computing"],
+    "telecomunicaciones": ["telecomunicaciones", "redes", "redes_inalambricas", "sistemas_celulares", "electronica"],
+    "electronica_automatizacion": ["electronica", "automatizacion", "robotica", "instrumentacion", "control", "iot", "plc"],
+    "electromecanica": ["electronica", "electricidad", "automatizacion", "control", "mecanica_fluidos", "termodinamica"],
+    "electricidad": ["electricidad", "sistemas_potencia", "energias_renovables", "calidad_energia", "automatizacion", "control"],
+    "mecanica": ["termodinamica", "mecanica_fluidos", "diseno_mecanico", "resistencia_materiales", "manufactura"],
+    "civil": ["estructuras", "geotecnia", "hidraulica_sanitaria", "construccion", "resistencia_materiales"],
+    "quimica": ["quimica_industrial", "operaciones_unitarias", "ambiental", "termodinamica"],
+    "ambiental": ["ambiental", "hidraulica_sanitaria", "quimica_industrial"],
+    "geologia": ["geologia", "petroleos", "geotecnia"],
+    "petroleos": ["petroleos", "geologia", "mecanica_fluidos", "termodinamica"],
+    "agroindustria": ["agroindustria", "quimica_industrial", "operaciones_unitarias"],
+    "matematica": ["matematica_aplicada", "analisis_datos", "programacion"],
+    "fisica": ["fisica_aplicada", "matematica_aplicada", "electronica"],
+    "economia": ["economia_finanzas", "analisis_datos", "gestion_empresarial"],
+    "administracion": ["gestion_empresarial", "gestion_proyectos", "economia_finanzas"],
+    "produccion": ["manufactura", "gestion_calidad", "gestion_proyectos", "automatizacion"]
+  }
+}
