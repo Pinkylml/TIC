@@ -1,0 +1,201 @@
+{
+  "n_rows": 296,
+  "n_cols": 63,
+  "censoring_rate": 0.543918918918919,
+  "event_rate": 0.45608108108108103,
+  "continuous_cols": [
+    "edad"
+  ],
+  "categorical_cols": [
+    "genero_m",
+    "hab_1",
+    "hab_2",
+    "hab_3",
+    "hab_4",
+    "hab_5",
+    "hab_6",
+    "hab_7",
+    "tech_programacion",
+    "tech_python",
+    "tech_java",
+    "tech_desarrollo_web",
+    "tech_desarrollo_movil",
+    "tech_base_datos",
+    "tech_machine_learning",
+    "tech_inteligencia_artificial",
+    "tech_analisis_datos",
+    "tech_big_data",
+    "tech_redes",
+    "tech_telecomunicaciones",
+    "tech_redes_inalambricas",
+    "tech_sistemas_celulares",
+    "tech_ciberseguridad",
+    "tech_cloud_computing",
+    "tech_sistemas_operativos",
+    "tech_iot",
+    "tech_automatizacion",
+    "tech_robotica",
+    "tech_electronica",
+    "tech_instrumentacion",
+    "tech_control",
+    "tech_electricidad",
+    "tech_sistemas_potencia",
+    "tech_energias_renovables",
+    "tech_calidad_energia",
+    "tech_termodinamica",
+    "tech_mecanica_fluidos",
+    "tech_diseno_mecanico",
+    "tech_resistencia_materiales",
+    "tech_manufactura",
+    "tech_gestion_calidad",
+    "tech_gestion_proyectos",
+    "tech_ingenieria_software",
+    "tech_estructuras",
+    "tech_geotecnia",
+    "tech_hidraulica_sanitaria",
+    "tech_construccion",
+    "tech_quimica_industrial",
+    "tech_operaciones_unitarias",
+    "tech_ambiental",
+    "tech_geologia",
+    "tech_petroleos",
+    "tech_agroindustria",
+    "tech_matematica_aplicada",
+    "tech_fisica_aplicada",
+    "tech_economia_finanzas",
+    "tech_gestion_empresarial",
+    "tech_auditoria_ti",
+    "tech_hci",
+    "tech_algoritmos"
+  ],
+  "binary_cols": [
+    "genero_m",
+    "tech_programacion",
+    "tech_java",
+    "tech_desarrollo_web",
+    "tech_desarrollo_movil",
+    "tech_base_datos",
+    "tech_machine_learning",
+    "tech_inteligencia_artificial",
+    "tech_analisis_datos",
+    "tech_redes",
+    "tech_telecomunicaciones",
+    "tech_redes_inalambricas",
+    "tech_sistemas_celulares",
+    "tech_ciberseguridad",
+    "tech_cloud_computing",
+    "tech_sistemas_operativos",
+    "tech_iot",
+    "tech_automatizacion",
+    "tech_robotica",
+    "tech_electronica",
+    "tech_instrumentacion",
+    "tech_control",
+    "tech_electricidad",
+    "tech_sistemas_potencia",
+    "tech_energias_renovables",
+    "tech_calidad_energia",
+    "tech_termodinamica",
+    "tech_mecanica_fluidos",
+    "tech_diseno_mecanico",
+    "tech_resistencia_materiales",
+    "tech_manufactura",
+    "tech_gestion_calidad",
+    "tech_gestion_proyectos",
+    "tech_ingenieria_software",
+    "tech_estructuras",
+    "tech_geotecnia",
+    "tech_hidraulica_sanitaria",
+    "tech_construccion",
+    "tech_quimica_industrial",
+    "tech_operaciones_unitarias",
+    "tech_ambiental",
+    "tech_geologia",
+    "tech_petroleos",
+    "tech_agroindustria",
+    "tech_matematica_aplicada",
+    "tech_fisica_aplicada",
+    "tech_economia_finanzas",
+    "tech_gestion_empresarial",
+    "tech_auditoria_ti",
+    "tech_hci",
+    "tech_algoritmos"
+  ],
+  "constraints_detected": [
+    {
+      "variable": "duration",
+      "constraint": "duration > 0",
+      "status": "OK"
+    },
+    {
+      "variable": "event",
+      "constraint": "event \u2208 {0, 1}",
+      "status": "OK"
+    },
+    {
+      "variable": "edad",
+      "constraint": "18 \u2264 edad \u2264 65",
+      "status": "OK"
+    },
+    {
+      "variable": "hab_1",
+      "constraint": "0 \u2264 value \u2264 1",
+      "status": "OK"
+    },
+    {
+      "variable": "hab_2",
+      "constraint": "0 \u2264 value \u2264 1",
+      "status": "OK"
+    },
+    {
+      "variable": "hab_3",
+      "constraint": "0 \u2264 value \u2264 1",
+      "status": "OK"
+    },
+    {
+      "variable": "hab_4",
+      "constraint": "0 \u2264 value \u2264 1",
+      "status": "OK"
+    },
+    {
+      "variable": "hab_5",
+      "constraint": "0 \u2264 value \u2264 1",
+      "status": "OK"
+    },
+    {
+      "variable": "hab_6",
+      "constraint": "0 \u2264 value \u2264 1",
+      "status": "OK"
+    },
+    {
+      "variable": "hab_7",
+      "constraint": "0 \u2264 value \u2264 1",
+      "status": "OK"
+    },
+    {
+      "variable": "tech_*",
+      "constraint": "value \u2208 {0, 1}",
+      "status": "OK"
+    }
+  ],
+  "max_correlation_with_event": 0.16966333063709282,
+  "duration_range": [
+    0.5791641874636573,
+    30.0
+  ],
+  "duration_unique_values": 265,
+  "pii_detected": [
+    "tech_ciberseguridad",
+    "tech_electricidad",
+    "tech_calidad_energia",
+    "tech_mecanica_fluidos",
+    "tech_gestion_calidad",
+    "tech_hidraulica_sanitaria"
+  ],
+  "problems_identified": [
+    "\ud83d\udea8 CR\u00cdTICO: Ninguna feature tiene correlaci\u00f3n > 0.2 con el target",
+    "\u26a0\ufe0f Alta correlaci\u00f3n duration-event",
+    "\u26a0\ufe0f Dataset peque\u00f1o (N < 500)",
+    "\u26a0\ufe0f Alta dimensionalidad relativa"
+  ]
+}

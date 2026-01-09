@@ -1,0 +1,9 @@
+{
+  "n_train": 296,
+  "n_test": 75,
+  "n_features": 61,
+  "rsf_c_index": 0.45434543454345433,
+  "xgb_c_index": 0.39603960396039606,
+  "best_baseline": "RSF",
+  "best_c_index": 0.45434543454345433
+}

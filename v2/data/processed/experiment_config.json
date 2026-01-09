@@ -1,0 +1,36 @@
+{
+  "random_state": 42,
+  "test_size": 0.2,
+  "scenarios": {
+    "baseline": {
+      "name": "Baseline (Real Only)",
+      "synthetic_ratio": 0.0,
+      "description": "Solo datos reales"
+    },
+    "augmented_x1": {
+      "name": "Augmented x1",
+      "synthetic_ratio": 1.0,
+      "description": "Real + 100% sint\u00e9tico"
+    },
+    "augmented_x2": {
+      "name": "Augmented x2",
+      "synthetic_ratio": 2.0,
+      "description": "Real + 200% sint\u00e9tico"
+    },
+    "synthetic_only": {
+      "name": "Synthetic Only",
+      "synthetic_ratio": "pure",
+      "description": "Solo sint\u00e9ticos (diagn\u00f3stico)"
+    }
+  },
+  "metrics": [
+    "c_index",
+    "auc",
+    "f1"
+  ],
+  "synthesizer": {
+    "method": "CTGAN",
+    "epochs": 300,
+    "batch_size": 50
+  }
+}

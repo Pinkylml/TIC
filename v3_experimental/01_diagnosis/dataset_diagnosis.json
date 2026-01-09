@@ -1,0 +1,1304 @@
+{
+  "dataset_info": {
+    "n_rows": 296,
+    "n_cols": 63,
+    "source": "../../v2/data/processed/train_final.parquet"
+  },
+  "column_classification": {
+    "continuous": [
+      "edad",
+      "duration"
+    ],
+    "discrete": [
+      "genero_m",
+      "hab_1",
+      "hab_2",
+      "hab_3",
+      "hab_4",
+      "hab_5",
+      "hab_6",
+      "hab_7",
+      "tech_programacion",
+      "tech_python",
+      "tech_java",
+      "tech_desarrollo_web",
+      "tech_desarrollo_movil",
+      "tech_base_datos",
+      "tech_machine_learning",
+      "tech_inteligencia_artificial",
+      "tech_analisis_datos",
+      "tech_big_data",
+      "tech_redes",
+      "tech_telecomunicaciones",
+      "tech_redes_inalambricas",
+      "tech_sistemas_celulares",
+      "tech_ciberseguridad",
+      "tech_cloud_computing",
+      "tech_sistemas_operativos",
+      "tech_iot",
+      "tech_automatizacion",
+      "tech_robotica",
+      "tech_electronica",
+      "tech_instrumentacion",
+      "tech_control",
+      "tech_electricidad",
+      "tech_sistemas_potencia",
+      "tech_energias_renovables",
+      "tech_calidad_energia",
+      "tech_termodinamica",
+      "tech_mecanica_fluidos",
+      "tech_diseno_mecanico",
+      "tech_resistencia_materiales",
+      "tech_manufactura",
+      "tech_gestion_calidad",
+      "tech_gestion_proyectos",
+      "tech_ingenieria_software",
+      "tech_estructuras",
+      "tech_geotecnia",
+      "tech_hidraulica_sanitaria",
+      "tech_construccion",
+      "tech_quimica_industrial",
+      "tech_operaciones_unitarias",
+      "tech_ambiental",
+      "tech_geologia",
+      "tech_petroleos",
+      "tech_agroindustria",
+      "tech_matematica_aplicada",
+      "tech_fisica_aplicada",
+      "tech_economia_finanzas",
+      "tech_gestion_empresarial",
+      "tech_auditoria_ti",
+      "tech_hci",
+      "tech_algoritmos",
+      "event"
+    ],
+    "binary": [
+      "genero_m",
+      "tech_programacion",
+      "tech_java",
+      "tech_desarrollo_web",
+      "tech_desarrollo_movil",
+      "tech_base_datos",
+      "tech_machine_learning",
+      "tech_inteligencia_artificial",
+      "tech_analisis_datos",
+      "tech_redes",
+      "tech_telecomunicaciones",
+      "tech_redes_inalambricas",
+      "tech_sistemas_celulares",
+      "tech_ciberseguridad",
+      "tech_cloud_computing",
+      "tech_sistemas_operativos",
+      "tech_iot",
+      "tech_automatizacion",
+      "tech_robotica",
+      "tech_electronica",
+      "tech_instrumentacion",
+      "tech_control",
+      "tech_electricidad",
+      "tech_sistemas_potencia",
+      "tech_energias_renovables",
+      "tech_calidad_energia",
+      "tech_termodinamica",
+      "tech_mecanica_fluidos",
+      "tech_diseno_mecanico",
+      "tech_resistencia_materiales",
+      "tech_manufactura",
+      "tech_gestion_calidad",
+      "tech_gestion_proyectos",
+      "tech_ingenieria_software",
+      "tech_estructuras",
+      "tech_geotecnia",
+      "tech_hidraulica_sanitaria",
+      "tech_construccion",
+      "tech_quimica_industrial",
+      "tech_operaciones_unitarias",
+      "tech_ambiental",
+      "tech_geologia",
+      "tech_petroleos",
+      "tech_agroindustria",
+      "tech_matematica_aplicada",
+      "tech_fisica_aplicada",
+      "tech_economia_finanzas",
+      "tech_gestion_empresarial",
+      "tech_auditoria_ti",
+      "tech_hci",
+      "tech_algoritmos",
+      "event"
+    ],
+    "categorical": [
+      "hab_1",
+      "hab_2",
+      "hab_3",
+      "hab_4",
+      "hab_5",
+      "hab_6",
+      "hab_7",
+      "tech_python",
+      "tech_big_data"
+    ]
+  },
+  "column_details": {
+    "edad": {
+      "dtype": "int64",
+      "n_unique": 17,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "continuous",
+      "min": 21.0,
+      "max": 40.0,
+      "mean": 25.175675675675677,
+      "std": 2.883538824445457
+    },
+    "genero_m": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "hab_1": {
+      "dtype": "float64",
+      "n_unique": 5,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hab_2": {
+      "dtype": "float64",
+      "n_unique": 5,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hab_3": {
+      "dtype": "float64",
+      "n_unique": 5,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hab_4": {
+      "dtype": "float64",
+      "n_unique": 5,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hab_5": {
+      "dtype": "float64",
+      "n_unique": 5,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hab_6": {
+      "dtype": "float64",
+      "n_unique": 5,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "hab_7": {
+      "dtype": "float64",
+      "n_unique": 5,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "tech_programacion": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_python": {
+      "dtype": "int64",
+      "n_unique": 1,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0
+      ]
+    },
+    "tech_java": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_desarrollo_web": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_desarrollo_movil": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_base_datos": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_machine_learning": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_inteligencia_artificial": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_analisis_datos": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_big_data": {
+      "dtype": "int64",
+      "n_unique": 1,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "categorical",
+      "values": [
+        0
+      ]
+    },
+    "tech_redes": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_telecomunicaciones": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_redes_inalambricas": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_sistemas_celulares": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_ciberseguridad": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_cloud_computing": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_sistemas_operativos": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_iot": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_automatizacion": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_robotica": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_electronica": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_instrumentacion": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_control": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_electricidad": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_sistemas_potencia": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_energias_renovables": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_calidad_energia": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_termodinamica": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_mecanica_fluidos": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_diseno_mecanico": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_resistencia_materiales": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_manufactura": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_gestion_calidad": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_gestion_proyectos": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_ingenieria_software": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_estructuras": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_geotecnia": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_hidraulica_sanitaria": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_construccion": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_quimica_industrial": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_operaciones_unitarias": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_ambiental": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_geologia": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_petroleos": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_agroindustria": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_matematica_aplicada": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_fisica_aplicada": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_economia_finanzas": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_gestion_empresarial": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_auditoria_ti": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_hci": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "tech_algoritmos": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "event": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "binary"
+    },
+    "duration": {
+      "dtype": "float64",
+      "n_unique": 265,
+      "null_count": 0,
+      "null_pct": 0.0,
+      "category": "continuous",
+      "min": 0.5791641874636573,
+      "max": 30.0,
+      "mean": 15.430552274028047,
+      "std": 10.991522975834698
+    }
+  },
+  "target_analysis": {
+    "event": {
+      "n_events": 135,
+      "n_censored": 161,
+      "censoring_rate": 0.543918918918919,
+      "event_rate": 0.45608108108108103
+    },
+    "duration": {
+      "min": 0.5791641874636573,
+      "max": 30.0,
+      "mean": 15.430552274028047,
+      "median": 17.635922630834415,
+      "std": 10.991522975834698,
+      "n_unique": 265
+    }
+  },
+  "constraints": [
+    {
+      "variable": "duration",
+      "constraint": "duration > 0",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "event",
+      "constraint": "event \u2208 {0, 1}",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "edad",
+      "constraint": "18 \u2264 edad \u2264 65",
+      "satisfied": true,
+      "violations": 0,
+      "range_actual": [
+        21.0,
+        40.0
+      ]
+    },
+    {
+      "variable": "hab_1",
+      "constraint": "0 \u2264 value \u2264 1",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "hab_2",
+      "constraint": "0 \u2264 value \u2264 1",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "hab_3",
+      "constraint": "0 \u2264 value \u2264 1",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "hab_4",
+      "constraint": "0 \u2264 value \u2264 1",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "hab_5",
+      "constraint": "0 \u2264 value \u2264 1",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "hab_6",
+      "constraint": "0 \u2264 value \u2264 1",
+      "satisfied": true,
+      "violations": 0
+    },
+    {
+      "variable": "hab_7",
+      "constraint": "0 \u2264 value \u2264 1",
+      "satisfied": true,
+      "violations": 0
+    }
+  ],
+  "cardinality": {
+    "hab_1": {
+      "n_unique": 5,
+      "values": [
+        "0.0",
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.0"
+      ],
+      "is_binary": false
+    },
+    "hab_2": {
+      "n_unique": 5,
+      "values": [
+        "0.0",
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.0"
+      ],
+      "is_binary": false
+    },
+    "hab_3": {
+      "n_unique": 5,
+      "values": [
+        "0.0",
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.0"
+      ],
+      "is_binary": false
+    },
+    "hab_4": {
+      "n_unique": 5,
+      "values": [
+        "0.0",
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.0"
+      ],
+      "is_binary": false
+    },
+    "hab_5": {
+      "n_unique": 5,
+      "values": [
+        "0.0",
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.0"
+      ],
+      "is_binary": false
+    },
+    "hab_6": {
+      "n_unique": 5,
+      "values": [
+        "0.0",
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.0"
+      ],
+      "is_binary": false
+    },
+    "hab_7": {
+      "n_unique": 5,
+      "values": [
+        "0.0",
+        "0.25",
+        "0.5",
+        "0.75",
+        "1.0"
+      ],
+      "is_binary": false
+    },
+    "tech_python": {
+      "n_unique": 1,
+      "values": [
+        "0"
+      ],
+      "is_binary": false
+    },
+    "tech_big_data": {
+      "n_unique": 1,
+      "values": [
+        "0"
+      ],
+      "is_binary": false
+    },
+    "genero_m": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_programacion": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_java": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_desarrollo_web": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_desarrollo_movil": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_base_datos": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_machine_learning": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_inteligencia_artificial": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_analisis_datos": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_redes": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_telecomunicaciones": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_redes_inalambricas": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_sistemas_celulares": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_ciberseguridad": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_cloud_computing": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_sistemas_operativos": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_iot": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_automatizacion": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_robotica": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_electronica": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_instrumentacion": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_control": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_electricidad": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_sistemas_potencia": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_energias_renovables": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_calidad_energia": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_termodinamica": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_mecanica_fluidos": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_diseno_mecanico": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_resistencia_materiales": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_manufactura": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_gestion_calidad": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_gestion_proyectos": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_ingenieria_software": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_estructuras": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_geotecnia": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_hidraulica_sanitaria": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_construccion": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_quimica_industrial": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_operaciones_unitarias": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_ambiental": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_geologia": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_petroleos": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_agroindustria": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_matematica_aplicada": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_fisica_aplicada": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_economia_finanzas": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_gestion_empresarial": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_auditoria_ti": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_hci": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "tech_algoritmos": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    },
+    "event": {
+      "n_unique": 2,
+      "values": [
+        "0",
+        "1"
+      ],
+      "is_binary": true
+    }
+  },
+  "synthesizer_recommendations": {
+    "method": "GaussianCopula",
+    "reason": "N=296 < 500, GANs inestables para small data",
+    "categorical_indices": [
+      1,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      18
+    ]
+  }
+}

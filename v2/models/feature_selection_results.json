@@ -1,0 +1,28 @@
+{
+  "top_features": [
+    "edad",
+    "hab_1",
+    "hab_3",
+    "hab_2",
+    "hab_4",
+    "hab_7",
+    "hab_6",
+    "hab_5",
+    "tech_inteligencia_artificial",
+    "tech_electricidad",
+    "genero_m",
+    "tech_analisis_datos",
+    "tech_economia_finanzas",
+    "tech_programacion",
+    "tech_redes",
+    "tech_diseno_mecanico",
+    "tech_hidraulica_sanitaria",
+    "tech_geotecnia",
+    "tech_desarrollo_web",
+    "tech_hci"
+  ],
+  "c_index_rsf": 0.4444444444444444,
+  "c_index_xgb": 0.49834983498349833,
+  "n_train": 296,
+  "n_test": 75
+}
