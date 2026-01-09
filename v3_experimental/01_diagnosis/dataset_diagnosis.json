@@ -1,8 +1,43 @@
 {
+  "metadata": {
+    "version": "2.0",
+    "created": "2026-01-08",
+    "author": "Data Scientist Auditor",
+    "purpose": "Diagnóstico para generación sintética de datos de supervivencia"
+  },
+  "scientific_references": [
+    {
+      "author": "Lawless, J.F.",
+      "year": 2003,
+      "title": "Statistical Models and Methods for Lifetime Data",
+      "publisher": "Wiley",
+      "relevance": "Fundamentos de survival analysis, restricciones de dominio"
+    },
+    {
+      "author": "Getie Ayaneh et al.",
+      "year": 2020,
+      "doi": "10.1155/2020/8653405",
+      "title": "Survival Models for the Analysis of Waiting Time to First Employment",
+      "relevance": "Análisis de tiempo-al-empleo en graduados"
+    },
+    {
+      "author": "Andonovikj et al.",
+      "year": 2024,
+      "title": "Survival analysis as semi-supervised multi-label classification",
+      "relevance": "Relación duration-event en síntesis de datos"
+    },
+    {
+      "author": "Xu et al.",
+      "year": 2019,
+      "title": "Modeling Tabular Data using Conditional GAN (CTGAN)",
+      "relevance": "Sintetizadores para datos tabulares"
+    }
+  ],
   "dataset_info": {
     "n_rows": 296,
     "n_cols": 63,
-    "source": "../../v2/data/processed/train_final.parquet"
+    "source": "../../v2/data/processed/train_final.parquet",
+    "original_source": "Encuesta recién graduados - pregrado (EPN)"
   },
   "column_classification": {
     "continuous": [
@@ -19,7 +54,6 @@
       "hab_6",
       "hab_7",
       "tech_programacion",
-      "tech_python",
       "tech_java",
       "tech_desarrollo_web",
       "tech_desarrollo_movil",
@@ -27,7 +61,6 @@
       "tech_machine_learning",
       "tech_inteligencia_artificial",
       "tech_analisis_datos",
-      "tech_big_data",
       "tech_redes",
       "tech_telecomunicaciones",
       "tech_redes_inalambricas",
@@ -133,7 +166,9 @@
       "hab_4",
       "hab_5",
       "hab_6",
-      "hab_7",
+      "hab_7"
+    ],
+    "zero_variance": [
       "tech_python",
       "tech_big_data"
     ]
@@ -267,10 +302,8 @@
       "n_unique": 1,
       "null_count": 0,
       "null_pct": 0.0,
-      "category": "categorical",
-      "values": [
-        0
-      ]
+      "category": "zero_variance",
+      "warning": "No aporta información, considerar excluir"
     },
     "tech_java": {
       "dtype": "int64",
@@ -326,10 +359,8 @@
       "n_unique": 1,
       "null_count": 0,
       "null_pct": 0.0,
-      "category": "categorical",
-      "values": [
-        0
-      ]
+      "category": "zero_variance",
+      "warning": "No aporta información, considerar excluir"
     },
     "tech_redes": {
       "dtype": "int64",
@@ -660,70 +691,103 @@
       "n_unique": 265
     }
   },
+  "correlation_analysis": {
+    "duration_event_correlation": 0.5039618579945941,
+    "max_feature_event_correlation": 0.1696633306370925,
+    "top_5_correlated_with_event": {
+      "tech_sistemas_operativos": 0.1696633306370925,
+      "hab_1": 0.15105859819436548,
+      "tech_geotecnia": -0.14404004877876345,
+      "tech_gestion_empresarial": 0.14018147085694949,
+      "tech_gestion_calidad": 0.12984220226213553
+    },
+    "warning": "High duration-event correlation must be preserved"
+  },
   "constraints": [
     {
       "variable": "duration",
       "constraint": "duration > 0",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "HARD",
+      "reference": "Lawless (2003): Time must be strictly positive"
     },
     {
       "variable": "event",
-      "constraint": "event \u2208 {0, 1}",
+      "constraint": "event ∈ {0, 1}",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "HARD",
+      "reference": "Standard censoring indicator"
     },
     {
       "variable": "edad",
-      "constraint": "18 \u2264 edad \u2264 65",
+      "constraint": "21 ≤ edad ≤ 40",
       "satisfied": true,
       "violations": 0,
-      "range_actual": [
-        21.0,
-        40.0
-      ]
+      "range_observed": [
+        21,
+        40
+      ],
+      "criticality": "SOFT",
+      "reference": "Rango observado en la encuesta EPN"
     },
     {
       "variable": "hab_1",
-      "constraint": "0 \u2264 value \u2264 1",
+      "constraint": "0 ≤ value ≤ 1",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "SOFT"
     },
     {
       "variable": "hab_2",
-      "constraint": "0 \u2264 value \u2264 1",
+      "constraint": "0 ≤ value ≤ 1",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "SOFT"
     },
     {
       "variable": "hab_3",
-      "constraint": "0 \u2264 value \u2264 1",
+      "constraint": "0 ≤ value ≤ 1",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "SOFT"
     },
     {
       "variable": "hab_4",
-      "constraint": "0 \u2264 value \u2264 1",
+      "constraint": "0 ≤ value ≤ 1",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "SOFT"
     },
     {
       "variable": "hab_5",
-      "constraint": "0 \u2264 value \u2264 1",
+      "constraint": "0 ≤ value ≤ 1",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "SOFT"
     },
     {
       "variable": "hab_6",
-      "constraint": "0 \u2264 value \u2264 1",
+      "constraint": "0 ≤ value ≤ 1",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "SOFT"
     },
     {
       "variable": "hab_7",
-      "constraint": "0 \u2264 value \u2264 1",
+      "constraint": "0 ≤ value ≤ 1",
       "satisfied": true,
-      "violations": 0
+      "violations": 0,
+      "criticality": "SOFT"
+    },
+    {
+      "variable": "tech_* (binarias)",
+      "constraint": "value ∈ {0, 1}",
+      "satisfied": true,
+      "violations": 0,
+      "n_features": 50,
+      "criticality": "HARD"
     }
   ],
   "cardinality": {
@@ -801,20 +865,6 @@
         "0.5",
         "0.75",
         "1.0"
-      ],
-      "is_binary": false
-    },
-    "tech_python": {
-      "n_unique": 1,
-      "values": [
-        "0"
-      ],
-      "is_binary": false
-    },
-    "tech_big_data": {
-      "n_unique": 1,
-      "values": [
-        "0"
       ],
       "is_binary": false
     },
@@ -1235,70 +1285,103 @@
       "is_binary": true
     }
   },
-  "synthesizer_recommendations": {
-    "method": "GaussianCopula",
-    "reason": "N=296 < 500, GANs inestables para small data",
-    "categorical_indices": [
-      1,
-      9,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41,
-      42,
-      43,
-      44,
-      45,
-      46,
-      47,
-      48,
-      49,
-      50,
-      51,
-      52,
-      53,
-      54,
-      55,
-      56,
-      57,
-      58,
-      59,
-      60,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      10,
-      18
+  "sparsity_analysis": {
+    "n_sparse_features": 29,
+    "n_zero_variance": 2,
+    "sparse_features": [
+      "tech_java",
+      "tech_machine_learning",
+      "tech_telecomunicaciones",
+      "tech_redes_inalambricas",
+      "tech_sistemas_celulares",
+      "tech_cloud_computing",
+      "tech_iot",
+      "tech_robotica",
+      "tech_electronica",
+      "tech_instrumentacion",
+      "tech_electricidad",
+      "tech_sistemas_potencia",
+      "tech_energias_renovables",
+      "tech_calidad_energia",
+      "tech_resistencia_materiales",
+      "tech_manufactura",
+      "tech_geotecnia",
+      "tech_construccion",
+      "tech_quimica_industrial",
+      "tech_operaciones_unitarias",
+      "tech_ambiental",
+      "tech_geologia",
+      "tech_petroleos",
+      "tech_agroindustria",
+      "tech_matematica_aplicada",
+      "tech_fisica_aplicada",
+      "tech_gestion_empresarial",
+      "tech_auditoria_ti",
+      "tech_algoritmos"
     ]
-  }
+  },
+  "synthesis_rules": {
+    "hard_constraints": [
+      {
+        "rule": "duration > 0",
+        "type": "inequality",
+        "action": "reject_if_violated",
+        "reference": "Lawless (2003)"
+      },
+      {
+        "rule": "event ∈ {0, 1}",
+        "type": "categorical",
+        "action": "round_to_nearest"
+      },
+      {
+        "rule": "tech_* ∈ {0, 1}",
+        "type": "binary",
+        "action": "round_to_nearest"
+      }
+    ],
+    "soft_constraints": [
+      {
+        "rule": "edad ∈ [21, 40]",
+        "type": "range",
+        "action": "clip_to_range"
+      },
+      {
+        "rule": "hab_* ∈ [0, 1]",
+        "type": "range",
+        "action": "clip_to_range"
+      },
+      {
+        "rule": "duration ∈ [0.58, 30.00]",
+        "type": "range",
+        "action": "clip_to_range"
+      }
+    ],
+    "features_to_exclude": [
+      "tech_python",
+      "tech_big_data"
+    ],
+    "preservation_targets": [
+      {
+        "metric": "censoring_rate",
+        "target_value": 0.543918918918919,
+        "tolerance": 0.05
+      },
+      {
+        "metric": "duration_event_correlation",
+        "target_value": 0.5039618579945941,
+        "tolerance": 0.1
+      }
+    ],
+    "recommended_synthesizer": {
+      "method": "GaussianCopula",
+      "reason": "N=296 < 500, GANs inestables para small data (Xu et al., 2019)",
+      "alternative": "CTGAN con epochs=300+ si se prefiere deep learning"
+    }
+  },
+  "problems_identified": [
+    "🚨 CRÍTICO: Ninguna feature tiene correlación > 0.2 con el target",
+    "⚠️ Dataset pequeño (N=296 < 500)",
+    "⚠️ 2 features con varianza cero a excluir",
+    "⚠️ Alta dimensionalidad relativa (p/N = 0.21)"
+  ]
 }

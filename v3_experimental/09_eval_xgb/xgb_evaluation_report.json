@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "date": "2026-01-08T22:45:02.583634",
+    "model": "XGBoost-AFT",
+    "methodology": "TSTR (Train on Synthetic, Test on Real)",
+    "random_state": 42
+  },
+  "test_set": {
+    "n": 75,
+    "event_rate": 0.4533333333333333
+  },
+  "xgb_params": {
+    "objective": "survival:aft",
+    "eval_metric": "aft-nloglik",
+    "aft_loss_distribution": "normal",
+    "aft_loss_distribution_scale": 1.0,
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "seed": 42
+  },
+  "num_rounds": 100,
+  "results": [
+    {
+      "scenario": "Baseline (Real Only)",
+      "n_train": 296,
+      "synthetic_ratio": "0%",
+      "c_index": 0.4823982398239824,
+      "neg_loglik": 1.1379394637222924
+    },
+    {
+      "scenario": "Real + Copula (100%)",
+      "n_train": 592,
+      "synthetic_ratio": "100%",
+      "c_index": 0.4042904290429043,
+      "neg_loglik": 1.1349506907200857
+    },
+    {
+      "scenario": "Real + Advanced (100%)",
+      "n_train": 592,
+      "synthetic_ratio": "100%",
+      "c_index": 0.46974697469746973,
+      "neg_loglik": 1.1026441385241406
+    }
+  ],
+  "best_model": {
+    "scenario": "Baseline (Real Only)",
+    "c_index": 0.4823982398239824,
+    "delta_vs_baseline": 0.0
+  },
+  "conclusion": {
+    "synthetic_helps": false,
+    "best_synthetic_method": "Baseline (Real Only)"
+  }
+}

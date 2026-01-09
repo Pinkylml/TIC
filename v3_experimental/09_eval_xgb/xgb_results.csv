@@ -1,0 +1,4 @@
+scenario,n_train,synthetic_ratio,c_index,neg_loglik,delta_vs_baseline,improvement
+Baseline (Real Only),296,0%,0.4823982398239824,1.1379394637222924,0.0,⚠️ Similar
+Real + Copula (100%),592,100%,0.4042904290429043,1.1349506907200857,-0.07810781078107809,❌ Peor
+Real + Advanced (100%),592,100%,0.46974697469746973,1.1026441385241406,-0.012651265126512656,⚠️ Similar

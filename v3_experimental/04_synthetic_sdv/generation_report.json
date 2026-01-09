@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "date": "2026-01-08T22:23:36.266644",
+    "method": "GaussianCopulaSynthesizer",
+    "sdv_version": "1.32.0",
+    "random_state": 42
+  },
+  "input": {
+    "n_real": 296,
+    "n_features": 61,
+    "excluded_cols": [
+      "tech_python",
+      "tech_big_data"
+    ]
+  },
+  "output": {
+    "n_synthetic": 1000,
+    "quality_score": 0.9363133752351098
+  },
+  "statistics_comparison": {
+    "duration": {
+      "real_mean": 15.430552274028047,
+      "synth_mean": 15.507985186246486,
+      "real_std": 10.991522975834698,
+      "synth_std": 8.716471500415384
+    },
+    "event_rate": {
+      "real": 0.4560810810810811,
+      "synthetic": 0.451
+    }
+  },
+  "files_generated": [
+    "synthetic_data_copula.parquet",
+    "synthesizer_model.pkl",
+    "synthesizer_metadata.json"
+  ]
+}

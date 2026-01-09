@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "experiment": "Baseline (Real Only)",
+    "scenario": "A",
+    "date": "2026-01-08T22:19:32.614870",
+    "random_state": 42
+  },
+  "data": {
+    "n_train": 296,
+    "n_test": 75,
+    "n_features": 59,
+    "event_rate_train": 0.4560810810810811,
+    "event_rate_test": 0.4533333333333333
+  },
+  "rsf": {
+    "c_index_train": 0.7210435014678409,
+    "c_index_test": 0.4675467546754675,
+    "ibs": 0.12040254081869432,
+    "model_path": "rsf_baseline.pkl",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 5,
+      "min_samples_split": 10,
+      "min_samples_leaf": 5
+    }
+  },
+  "xgb_aft": {
+    "c_index_train": 0.7544035228182546,
+    "c_index_test": 0.4790979097909791,
+    "ibs": null,
+    "model_path": "xgb_aft_baseline.json",
+    "hyperparameters": {
+      "objective": "survival:aft",
+      "aft_loss_distribution": "normal",
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "num_boost_round": 100
+    }
+  },
+  "best_model": {
+    "name": "XGBoost-AFT",
+    "c_index": 0.4790979097909791
+  }
+}

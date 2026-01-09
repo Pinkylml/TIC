@@ -1,0 +1,188 @@
+{
+    "columns": {
+        "edad": {
+            "sdtype": "numerical"
+        },
+        "genero_m": {
+            "sdtype": "categorical"
+        },
+        "hab_1": {
+            "sdtype": "numerical"
+        },
+        "hab_2": {
+            "sdtype": "numerical"
+        },
+        "hab_3": {
+            "sdtype": "numerical"
+        },
+        "hab_4": {
+            "sdtype": "numerical"
+        },
+        "hab_5": {
+            "sdtype": "numerical"
+        },
+        "hab_6": {
+            "sdtype": "numerical"
+        },
+        "hab_7": {
+            "sdtype": "numerical"
+        },
+        "tech_programacion": {
+            "sdtype": "categorical"
+        },
+        "tech_java": {
+            "sdtype": "categorical"
+        },
+        "tech_desarrollo_web": {
+            "sdtype": "categorical"
+        },
+        "tech_desarrollo_movil": {
+            "sdtype": "categorical"
+        },
+        "tech_base_datos": {
+            "sdtype": "categorical"
+        },
+        "tech_machine_learning": {
+            "sdtype": "categorical"
+        },
+        "tech_inteligencia_artificial": {
+            "sdtype": "categorical"
+        },
+        "tech_analisis_datos": {
+            "sdtype": "categorical"
+        },
+        "tech_redes": {
+            "sdtype": "categorical"
+        },
+        "tech_telecomunicaciones": {
+            "sdtype": "categorical"
+        },
+        "tech_redes_inalambricas": {
+            "sdtype": "categorical"
+        },
+        "tech_sistemas_celulares": {
+            "sdtype": "categorical"
+        },
+        "tech_ciberseguridad": {
+            "sdtype": "categorical"
+        },
+        "tech_cloud_computing": {
+            "sdtype": "categorical"
+        },
+        "tech_sistemas_operativos": {
+            "sdtype": "categorical"
+        },
+        "tech_iot": {
+            "sdtype": "categorical"
+        },
+        "tech_automatizacion": {
+            "sdtype": "categorical"
+        },
+        "tech_robotica": {
+            "sdtype": "categorical"
+        },
+        "tech_electronica": {
+            "sdtype": "categorical"
+        },
+        "tech_instrumentacion": {
+            "sdtype": "categorical"
+        },
+        "tech_control": {
+            "sdtype": "categorical"
+        },
+        "tech_electricidad": {
+            "sdtype": "categorical"
+        },
+        "tech_sistemas_potencia": {
+            "sdtype": "categorical"
+        },
+        "tech_energias_renovables": {
+            "sdtype": "categorical"
+        },
+        "tech_calidad_energia": {
+            "sdtype": "categorical"
+        },
+        "tech_termodinamica": {
+            "sdtype": "categorical"
+        },
+        "tech_mecanica_fluidos": {
+            "sdtype": "categorical"
+        },
+        "tech_diseno_mecanico": {
+            "sdtype": "categorical"
+        },
+        "tech_resistencia_materiales": {
+            "sdtype": "categorical"
+        },
+        "tech_manufactura": {
+            "sdtype": "categorical"
+        },
+        "tech_gestion_calidad": {
+            "sdtype": "categorical"
+        },
+        "tech_gestion_proyectos": {
+            "sdtype": "categorical"
+        },
+        "tech_ingenieria_software": {
+            "sdtype": "categorical"
+        },
+        "tech_estructuras": {
+            "sdtype": "categorical"
+        },
+        "tech_geotecnia": {
+            "sdtype": "categorical"
+        },
+        "tech_hidraulica_sanitaria": {
+            "sdtype": "categorical"
+        },
+        "tech_construccion": {
+            "sdtype": "categorical"
+        },
+        "tech_quimica_industrial": {
+            "sdtype": "categorical"
+        },
+        "tech_operaciones_unitarias": {
+            "sdtype": "categorical"
+        },
+        "tech_ambiental": {
+            "sdtype": "categorical"
+        },
+        "tech_geologia": {
+            "sdtype": "categorical"
+        },
+        "tech_petroleos": {
+            "sdtype": "categorical"
+        },
+        "tech_agroindustria": {
+            "sdtype": "categorical"
+        },
+        "tech_matematica_aplicada": {
+            "sdtype": "categorical"
+        },
+        "tech_fisica_aplicada": {
+            "sdtype": "categorical"
+        },
+        "tech_economia_finanzas": {
+            "sdtype": "categorical"
+        },
+        "tech_gestion_empresarial": {
+            "sdtype": "categorical"
+        },
+        "tech_auditoria_ti": {
+            "sdtype": "categorical"
+        },
+        "tech_hci": {
+            "sdtype": "categorical"
+        },
+        "tech_algoritmos": {
+            "sdtype": "categorical"
+        },
+        "event": {
+            "sdtype": "categorical"
+        },
+        "duration": {
+            "sdtype": "numerical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

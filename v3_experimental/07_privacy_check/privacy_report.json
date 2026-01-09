@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "date": "2026-01-08T22:31:55.854860",
+    "audit_type": "Privacy and Memorization Check",
+    "metrics": [
+      "Exact Copies",
+      "DCR (Distance to Closest Record)"
+    ]
+  },
+  "exact_copies": {
+    "global": {
+      "count": 0,
+      "total": 1000,
+      "percentage": 0.0
+    },
+    "advanced": {
+      "count": 0,
+      "total": 1000,
+      "percentage": 0.0
+    }
+  },
+  "dcr_statistics": {
+    "global": {
+      "min": 0.34791154073151204,
+      "max": 21.015219325147562,
+      "mean": 7.847573297247568,
+      "median": 7.431926050731941,
+      "std": 3.425185837398024
+    },
+    "advanced": {
+      "min": 1.3314189611211957,
+      "max": 17.498630705268276,
+      "mean": 6.521500939693607,
+      "median": 6.0838123750518465,
+      "std": 2.8478136421977007
+    }
+  },
+  "risk_assessment": {
+    "global": {
+      "high_risk_count": 1,
+      "medium_risk_count": 0,
+      "risk_level": "BAJO"
+    },
+    "advanced": {
+      "high_risk_count": 0,
+      "medium_risk_count": 0,
+      "risk_level": "BAJO"
+    }
+  },
+  "conclusion": {
+    "memorization_detected": false,
+    "approved_for_use": true
+  },
+  "files_generated": [
+    "dcr_histogram.png",
+    "dcr_comparison.png",
+    "privacy_report.json"
+  ]
+}

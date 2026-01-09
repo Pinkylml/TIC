@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "date": "2026-01-08T22:41:04.780814",
+    "model": "Random Survival Forest",
+    "methodology": "TSTR (Train on Synthetic, Test on Real)",
+    "random_state": 42
+  },
+  "test_set": {
+    "n": 75,
+    "event_rate": 0.4533333333333333
+  },
+  "rsf_params": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "min_samples_split": 10,
+    "min_samples_leaf": 5,
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "results": [
+    {
+      "scenario": "Baseline (Real Only)",
+      "n_train": 296,
+      "synthetic_ratio": "0%",
+      "c_index": 0.47414741474147415
+    },
+    {
+      "scenario": "Real + Copula (100%)",
+      "n_train": 592,
+      "synthetic_ratio": "100%",
+      "c_index": 0.4730473047304731
+    },
+    {
+      "scenario": "Real + Advanced (100%)",
+      "n_train": 592,
+      "synthetic_ratio": "100%",
+      "c_index": 0.47744774477447743
+    }
+  ],
+  "best_model": {
+    "scenario": "Real + Advanced (100%)",
+    "c_index": 0.47744774477447743,
+    "delta_vs_baseline": 0.0033003300330032848
+  },
+  "conclusion": {
+    "synthetic_helps": true,
+    "best_synthetic_method": "Advanced"
+  }
+}

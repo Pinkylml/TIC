@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "date": "2026-01-08T22:28:07.511305",
+    "method": "Conditional GaussianCopula (Stratified)",
+    "strategy": "Conditioning on Time Quartiles + Event",
+    "random_state": 42
+  },
+  "strata": {
+    "Q1_E0": {
+      "n_real": 64,
+      "n_synthetic": 216
+    },
+    "Q1_E1": {
+      "n_real": 10,
+      "n_synthetic": 33
+    },
+    "Q2_E0": {
+      "n_real": 58,
+      "n_synthetic": 195
+    },
+    "Q2_E1": {
+      "n_real": 16,
+      "n_synthetic": 54
+    },
+    "Q3_E0": {
+      "n_real": 3,
+      "n_synthetic": 0
+    },
+    "Q3_E1": {
+      "n_real": 71,
+      "n_synthetic": 253
+    },
+    "Q4_E0": {
+      "n_real": 36,
+      "n_synthetic": 121
+    },
+    "Q4_E1": {
+      "n_real": 38,
+      "n_synthetic": 128
+    }
+  },
+  "output": {
+    "n_synthetic_total": 1000,
+    "n_strata": 7
+  },
+  "validation": {
+    "duration_corr_real": 0.5039618579945941,
+    "duration_corr_synth": 0.5192491779787956,
+    "delta_corr": 0.015287319984201408
+  },
+  "files_generated": [
+    "synthetic_data_advanced.parquet",
+    "synth_Q1-E0.pkl",
+    "synth_Q1-E1.pkl",
+    "synth_Q2-E0.pkl",
+    "synth_Q2-E1.pkl",
+    "synth_Q3-E1.pkl",
+    "synth_Q4-E0.pkl",
+    "synth_Q4-E1.pkl"
+  ]
+}
